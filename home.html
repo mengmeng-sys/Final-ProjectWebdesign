@@ -1,198 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SofaSoGood</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SofaSoGood</title>
+    <link rel="stylesheet" href="styles/homeStyle.css" />
+  </head>
+  <body>
+    <!-- Top Notification Bar -->
+    <div class="notification-bar">
+      <img src="icon/ticket-percent.svg" />
+      <p>30% off storewide — Limited time!</p>
+      <a href="#"><span>Shop Now</span> <img src="icon/right.svg" /></a>
+    </div>
 
-  <!-- Top Notification Bar -->
-  <div class="notification-bar">
-    <img src="icon/ticket-percent.svg" />
-    <p>30% off storewide — Limited time!</p>
-    <a href="#">Shop Now <img src="icon/right.svg" /></a>
-  </div>
+    <!-- Navigation Bar -->
+    <header class="navigation-bar">
+      <div class="nav-left">SofaSoGood</div>
 
-  <!-- Navigation Bar -->
-  <header class="navigation-bar">
-    <div class="nav-left">SofaSoGood</div>
+      <nav class="nav-middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
 
-    <nav class="nav-middle">
-      <ul>
+      <div class="nav-right">
+        <img src="icon/search-02.svg" />
+        <img src="icon/user-circle.svg" />
+        <img src="icon/Cart-Button.svg" />
+      </div>
+    </header>
+
+    <!-- Hero / Slider Section -->
+    <section class="hero-section">
+      <div class="hero-image">
+        <img
+          id="image-hero"
+          src="image/nav-image/nav-home.svg"
+          alt="Main Sofa Image"
+        />
+        <div class="nav-arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path
+              d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20ZM12 11H16V13H12V16L8 12L12 8V11Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path
+              d="M12 11V8L16 12L12 16V13H8V11H12ZM12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="slider-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>
+          Simply Unique / <br />
+          Simply Better.
+        </h1>
+        <p>
+          <strong>SofaSoGood</strong> is a gift & decorations store based in
+          Cambodia since 2019.
+        </p>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="category living-room">
+        <div class="category-tag">
+          <h3>Living Room</h3>
+          <a href="#">Shop Now →</a>
+        </div>
+
+        <img src="image/banner/living-room.svg" />
+      </div>
+
+      <div class="category bedroom">
+        <div class="category-tag">
+          <h3>Bedroom</h3>
+
+          <a href="#">Shop Now →</a>
+        </div>
+
+        <img src="image/banner/bed-room.svg" />
+      </div>
+
+      <div class="category kitchen">
+        <div class="category-tag">
+          <h3>Kitchen</h3>
+
+          <a href="#">Shop Now →</a>
+        </div>
+
+        <img src="image/banner/kitchen.svg" />
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals">
+      <div class="section-header">
+        <h2>New<br>Arrivals</h2>
+        <a href="#">More Products →</a>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="tag">
+            <span class="new">NEW</span>
+            <span class="sale">-50%</span>
+          </div>
+
+          <img src="image/arrival/item-1.svg" />
+          <div class="decreptoin">
+            <button>Add to cart</button>
+            <h4>Loveseat Sofa</h4>
+            <p>$199.00 <span class="old">$400.00</span></p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="tag">
+            <span class="new">NEW</span>
+            <span class="sale">-50%</span>
+          </div>
+          <img src="image/arrival/item-2.svg" />
+          <div class="decreptoin">
+            <h4>Table Lamp</h4>
+            <p>$24.99</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="tag">
+            <span class="new">NEW</span>
+            <span class="sale">-50%</span>
+          </div>
+          <img src="image/arrival/item-3.svg" />
+          <div class="decreptoin">
+            <h4>Beige Table Lamp</h4>
+            <p>$24.99</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="tag">
+            <span class="new">NEW</span>
+            <span class="sale">-50%</span>
+          </div>
+          <img src="image/arrival/item-4.svg" />
+          <div class="decreptoin">
+            <h4>Bamboo Basket</h4>
+            <p>$24.99</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="tag">
+            <span class="new">NEW</span>
+            <span class="sale">-50%</span>
+          </div>
+          <img src="image/arrival/item-5.svg" />
+          <div class="decreptoin">
+            <h4>Toaster</h4>
+            <p>$224.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Icons Section -->
+    <section class="services">
+      <div class="service">
+        <img src="icon/truck.svg" />
+        <h4>Free Shipping</h4>
+        <p>Order above $200</p>
+      </div>
+
+      <div class="service">
+        <img src="icon/money.svg" />
+        <h4>Money-back</h4>
+        <p>30 days guarantee</p>
+      </div>
+
+      <div class="service">
+        <img src="icon/lock-01.svg" />
+        <h4>Secure Payments</h4>
+        <p>Secured by Stripe</p>
+      </div>
+
+      <div class="service">
+        <img src="icon/call.svg" />
+        <h4>24/7 Support</h4>
+        <p>Phone and Email support</p>
+      </div>
+    </section>
+
+    <!-- Lower Banner / Promo -->
+    <section class="promo-banner">
+      <img src="image/banner/promo-image.svg" />
+      <div class="promo-text">
+        <h4>SALE UP TO 35% OFF</h4>
+        <h2>
+          HUNDREDS of <br />
+          New lower prices!
+        </h2>
+        <p>
+          It's more affordable than ever to give every room in your home a
+          stylish makeover
+        </p>
+        <a href="#">Shop Now →</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="brand">SofaSoGood</div>
+        <p>Gift & Decoration Store</p>
+      </div>
+
+      <ul class="footer-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-    </nav>
 
-    <div class="nav-right">
-      <img src="icon/search-02.svg" />
-      <img src="icon/user-circle.svg" />
-      <img src="icon/Cart-Button.svg" />
-    </div>
-  </header>
-
-  <!-- Hero / Slider Section -->
-  <section class="hero-section">
-
-    <div class="hero-image">
-      <img src="image/nav-image/nav-home.svg" alt="Main Sofa Image" />
-      <button class="left-arrow"><img src="icon/left-arrow-circle.svg"></button>
-      <button class="right-arrow"><img src="icon/right-arrow-circle.svg"></button>
-    </div>
-
-    <div class="hero-text">
-      <h1>Simply Unique / <br> Simply Better.</h1>
-      <p><strong>SofaSoGood</strong> is a gift & decorations store based in HCMC, Vietnam. Est since 2019.</p>
-    </div>
-
-    <div class="slider-dots">
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-
-  </section>
-
-  <!-- Categories Section -->
-  <section class="categories">
-    <div class="category living-room">
-      <h3>Living Room</h3>
-      <a href="#">Shop Now →</a>
-      <img src="image/banner/living-room.svg" />
-    </div>
-
-    <div class="category bedroom">
-      <h3>Bedroom</h3>
-      <a href="#">Shop Now →</a>
-      <img src="image/banner/bed-room.svg" />
-    </div>
-
-    <div class="category kitchen">
-      <h3>Kitchen</h3>
-      <a href="#">Shop Now →</a>
-      <img src="image/banner/kitchen.svg" />
-    </div>
-  </section>
-
-  <!-- New Arrivals -->
-  <section class="new-arrivals">
-    <div class="section-header">
-      <h2>New Arrivals</h2>
-      <a href="#">More Products →</a>
-    </div>
-
-    <div class="product-grid">
-
-      <div class="product-card">
-        <span class="tag new">NEW</span>
-        <span class="tag sale">-50%</span>
-        <img src="image/arrival/item-1.svg" />
-        <button>Add to cart</button>
-        <h4>Loveseat Sofa</h4>
-        <p>$199.00 <span class="old">$400.00</span></p>
+      <div class="footer-icons">
+        <img src="icon/instagram.svg" />
+        <img src="icon/facebook.svg" />
+        <img src="icon/youtube.svg" />
       </div>
 
-      <div class="product-card">
-        <span class="tag new">NEW</span>
-        <span class="tag sale">-50%</span>
-        <img src="image/arrival/item-2.svg" />
-        <h4>Table Lamp</h4>
-        <p>$24.99</p>
+      <div class="footer-bottom">
+        <p>Copyright © 2023. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
       </div>
-
-      <div class="product-card">
-        <span class="tag new">NEW</span>
-        <span class="tag sale">-50%</span>
-        <img src="image/arrival/item-3.svg" />
-        <h4>Beige Table Lamp</h4>
-        <p>$24.99</p>
-      </div>
-
-      <div class="product-card">
-        <span class="tag new">NEW</span>
-        <span class="tag sale">-50%</span>
-        <img src="image/arrival/item-4.svg" />
-        <h4>Bamboo Basket</h4>
-        <p>$24.99</p>
-      </div>
-
-      <div class="product-card">
-        <span class="tag new">NEW</span>
-        <span class="tag sale">-50%</span>
-        <img src="image/arrival/item-5.svg" />
-        <h4>Toaster</h4>
-        <p>$224.99</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Services Icons Section -->
-  <section class="services">
-    <div class="service">
-      <img src="icon/truck.svg" />
-      <h4>Free Shipping</h4>
-      <p>Order above $200</p>
-    </div>
-
-    <div class="service">
-      <img src="icon/money.svg" />
-      <h4>Money-back</h4>
-      <p>30 days guarantee</p>
-    </div>
-
-    <div class="service">
-      <img src="icon/lock-01.svg" />
-      <h4>Secure Payments</h4>
-      <p>Secured by Stripe</p>
-    </div>
-
-    <div class="service">
-      <img src="icon/call.svg" />
-      <h4>24/7 Support</h4>
-      <p>Phone and Email support</p>
-    </div>
-  </section>
-
-  <!-- Lower Banner / Promo -->
-  <section class="promo-banner">
-    <img src="image/banner/promo-image.svg" />
-    <div class="promo-text">
-      <h4>SALE UP TO 35% OFF</h4>
-      <h2>HUNDREDS of <br> New lower prices!</h2>
-      <p>It's more affordable than ever to give every room in your home a stylish makeover</p>
-      <a href="#">Shop Now →</a>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div class="brand">SofaSoGood</div>
-      <p>Gift & Decoration Store</p>
-    </div>
-
-    <ul class="footer-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-
-    <div class="footer-icons">
-      <img src="icon/instagram.svg" />
-      <img src="icon/facebook.svg" />
-      <img src="icon/youtube.svg" />
-    </div>
-
-    <div class="footer-bottom">
-      <p>Copyright © 2023. All rights reserved.</p>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
