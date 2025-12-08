@@ -4,7 +4,7 @@
 }
 .container{
  width: 100%;
- height: 100%;
+ height: auto;
  background-color: rgba(0, 0, 0, 0);
  display: flex;
  flex-direction: column;
@@ -76,6 +76,9 @@ margin-top: 12px;
   width: 70px;
 }
 .body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: rgba(250, 235, 215, 0);
   flex-grow: 1;
@@ -270,7 +273,9 @@ font-size: 17px;
   width: 140px;
   align-items: center;
   justify-content: center;
-  margin: 4em 0em 7em 0em;
+  margin-top: 4em;
+  margin-bottom: 7em;
+  
 font-weight: 900;
 }
 .last-im{
@@ -279,8 +284,15 @@ font-weight: 900;
   flex-direction: row;
   justify-content:center;
   margin-bottom: 0;
-
-
+}
+.nice-t{
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
 }
 .last-im img{
 
@@ -289,13 +301,8 @@ font-weight: 900;
     max-width: 100%;
     height: 100%;
 }
-.nice-t{
-  position: absolute;
-  top: 100px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 0.6em;
+.forResponsivenes{
+  display: none;
 }
 .big-t{
   font-weight: 500;
@@ -311,6 +318,9 @@ font-weight: 900;
 }
 .su{
   margin-left: 240px;
+      font-weight: 700;
+    font-size: 17px;
+    color: rgb(103, 103, 103);
 }
 .sign{
 margin-top: 1.6em;
@@ -328,8 +338,8 @@ margin-top: 1.6em;
 display: flex;
 padding: 50px 120px 50px 120px;
 flex-direction: column;
-  background-color: black;
-  color: white;
+background-color: rgb(0, 0, 0);
+color: white;
 }
 .block1{
   display: flex;
@@ -347,7 +357,7 @@ flex-direction: column;
   font-weight: 700;
   font-size: 25px;
 }
-.line1{
+.line1,.line-2{
   color: rgb(205, 205, 205);
 }
 .list-2{
@@ -396,7 +406,7 @@ align-items: center;
  
 }
 /* ===================== MOBILE RESPONSIVE ===================== */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   
   /* Container padding */
   *{
@@ -468,16 +478,25 @@ align-items: center;
   align-items: center;
   gap: 2em;
   }
-  .Select-Group-1, .Select-Group-2, .Select-Group-3 { 
+  .Select-Group-1, .Select-Group-2,.Select-Group-3{ 
     margin-left: 0;
     font-size: 10px;
     width: 400px;
   }
-
-
+.Select-Group-3{
+  border-top:1px solid;
+  border-bottom: 1px solid;
+  padding:12px 0px 12px 0px;
+ gap: 16em;
+}
+#s{
+  border: none;
+}
   .last-se{
-    font-size:20px;
+    font-size: 18px;
+    display: flex;
   }
+
   #R, #p {
     width: 100%;
   }
@@ -486,23 +505,15 @@ align-items: center;
     margin-bottom: 120px;
   }
 
-  .Select-Group-3 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  
   .block-sell {
    display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     max-width: 100%;
-    margin: 0em 2em 0em 2em;
+    margin-left: 20px;
   }
-  .container-2{
-     margin: 0em 2em 0em 2em;
-  }
-  .avertise{
+  
+    .avertise{
     top: 20px;
   }
   .star svg{
@@ -518,19 +529,73 @@ align-items: center;
     display: flex;
     justify-content:center;
     align-items: center;
-    margin-left: 160px;
+  
   }
 
+ .last-im img{
+  display: none;
+ }
+ .forResponsivenes{
+  display: flex;
+  width: 7000px;
+  background-color: rgb(189, 189, 189);
+  height: 400px;
+ }
+ .semi-block{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .line-2{
+  font-size: 40px;
+  transform: rotate(90deg);
+ }
+ .line1{
+  font-size: 20px;
+ }
   /* Footer */
   .footer {
-    padding: 30px 15px;
+    padding: 40px 15px;
   }
-  .block1 {
+  .list-2{
+    margin-top: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .sofsogo{
+    font-size: 46px;
+  }
+  .block1{
     flex-direction: column;
     gap: 20px;
   }
-  .policy-blo {
-    flex-direction: column;
-    margin-right: 0;
+  .block2{
+    flex-direction: column-reverse;
+    gap: 20px;
   }
-}
+  .big-t{
+    font-size: 40px;
+  }
+  .para{
+    font-size: 18px;
+  }
+  .su{
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(103, 103, 103);
+  }
+  .policy-blo {
+    margin-top: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+
+  }
+
