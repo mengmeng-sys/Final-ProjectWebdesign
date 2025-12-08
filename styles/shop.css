@@ -4,11 +4,10 @@
 }
 .container{
  width: 100%;
- height: 100vh;
+ height: 100%;
  background-color: rgba(0, 0, 0, 0);
  display: flex;
  flex-direction: column;
-
 }
 .notification-bar{
  display: flex;
@@ -71,6 +70,7 @@ margin-top: 12px;
   width: 70px;
 }
 .body{
+  width: 100%;
   background-color: rgba(250, 235, 215, 0);
   flex-grow: 1;
 }
@@ -243,8 +243,86 @@ gap: 10px;
 font-size: 17px;
 
 }
+.more{
+  background-color: white;
+  color:black;
+  border: 2px solid black;
+  border-radius: 130px;
+  padding: 12px;
+  display: flex;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+  margin: 4em 0em 7em 0em;
+font-weight: 900;
+}
+.last-im{
+  position: relative;
+  margin-bottom: 0;
+
+
+}
+.last-im img{
+
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.nice-t{
+  position: absolute;
+  top: 100px;
+  left: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+}
+.big-t{
+  font-weight: 500;
+  font-size:50px;
+}
+.para{
+  font-size: 23px;
+  font-weight: normal;
+}
+.e1{
+  margin-left: 4px;
+  color: grey;
+}
+.su{
+  margin-left: 240px;
+}
+.sign{
+margin-top: 1.6em;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.lin{
+  border: 0.3px solid grey;
+  width: 94%;
+}
+
 .footer{
-  margin-top: 10px;
+display: flex;
+flex-direction: column;
   background-color: black;
   color: white;
+}
+.list-2{
+ display: flex;
+ flex-direction: row;
+ gap: 3em;
+ list-style: none;
+}
+.list-2 a{
+ color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+.block1{
+  display: flex;
+  flex-direction: row;
 }
