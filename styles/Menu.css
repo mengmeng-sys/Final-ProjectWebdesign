@@ -1,6 +1,6 @@
 /* --- Container width 720px --- */
 .mobile-menu-container {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     padding: 20px;
     font-family: "Arial", sans-serif;
@@ -13,7 +13,7 @@
 /* --- Header --- */
 .menu-header {
     display: flex;
-    gap: 20em;
+    gap: 18em;
      justify-content:center;
     align-items: center;
 }
