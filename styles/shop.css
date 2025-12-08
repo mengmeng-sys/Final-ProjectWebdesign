@@ -94,6 +94,9 @@ margin-top: 12px;
    justify-content: center;
    font-size: 20px;
 }
+.h{
+  color: grey;
+}
 .big-l{
   display: flex;
   justify-content: center;
@@ -307,22 +310,69 @@ margin-top: 1.6em;
 
 .footer{
 display: flex;
+padding: 50px 120px 50px 120px;
 flex-direction: column;
   background-color: black;
   color: white;
 }
+.block1{
+  display: flex;
+  flex-direction: row;
+  gap: 700px;
+}
+.semi-block{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.sofsogo{
+  font-weight: 700;
+  font-size: 25px;
+}
+.line1{
+  color: rgb(205, 205, 205);
+}
 .list-2{
+  margin-left: 1em;
  display: flex;
  flex-direction: row;
  gap: 3em;
  list-style: none;
 }
 .list-2 a{
- color: rgb(255, 255, 255);
+ color: rgb(205, 205, 205);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
 }
-.block1{
+.linee{
+  margin-top: 3.4em;
+   border: 0.2px solid rgb(62, 62, 62);
+   
+}
+.block2{
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
+align-items: center;
+ 
+
 }
+.policy-blo{
+  display: flex;
+  gap: 1.5em;
+  flex-direction: row;
+  font-size: 12px;
+   margin-right: 790px;
+}
+.copyright{
+  color: rgb(205, 205, 205);
+}
+.ico{
+  display: flex;
+  flex-direction: row;
+  gap: 1.2em;
+ 
+}
+
