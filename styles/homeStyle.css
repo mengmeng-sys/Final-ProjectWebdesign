@@ -1,7 +1,5 @@
 /* ============ GLOBAL RESET ============ */
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -243,21 +241,82 @@ body {
 
 .product-grid {
   width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+
 }
 
 .product-card {
-  width: 280px;
+  width: 300px;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 5px;  
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+.tag {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5px;
+  left: 5px;
+}
+
+.tag span {
+  width: 50px;
+  height: 24px;
+  padding: 2px;
+  font-size: 1.5;
+  font-weight: 600;
+  text-align: center;
+}
+
+.new {
+  background-color: white;
+  color: black;
+}
+
+.sale {
+  background-color: rgb(56, 203, 137);
+  color: white;
 }
 
 .product-card img {
   width: 100%;
   height: auto;
+  
+  
 }
 
+.dereption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  row-gap: 8px;
+}
+
+.star {
+  display: flex;
+  gap: 5px;
+}
+
+.star svg {
+  height: 16px;
+  width: 16px;
+}
+
+.old {
+  font-weight: 500;
+  color: rgb(108, 114, 117);
+  text-decoration: line-through;
+}
 
 
 
