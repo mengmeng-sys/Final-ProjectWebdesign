@@ -116,6 +116,7 @@ margin-top: 12px;
 margin-top: 2em;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 align-items: center;
 margin-bottom: 2em;
 
@@ -181,7 +182,8 @@ font-weight: 600;
   background-color: rgba(255, 192, 203, 0);
 }
 .block-sell{
- width: 1360px;
+  width: 100%;
+  max-width: 1360px;
  display: flex;
  flex-direction: row;
  gap: 2em;
@@ -375,4 +377,5 @@ align-items: center;
   gap: 1.2em;
  
 }
+
 
