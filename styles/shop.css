@@ -128,6 +128,7 @@ align-items: center;
 margin-bottom: 2em;
 
 }
+
 .Select-Group-1 ,.Select-Group-2{
   gap: 6px;
   display: flex;
@@ -153,6 +154,10 @@ margin-bottom: 2em;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 13px;
 }
+  #R:focus,#p:focus{
+
+    margin-bottom: 120px;
+  }
 .Select-Group-3{
   margin-top: 20px;
   margin-left:430px;
@@ -397,7 +402,7 @@ align-items: center;
   *{
     padding: 0;
     margin: 0;
-    
+
   }
   .container {
     width: 100%;
@@ -445,14 +450,11 @@ align-items: center;
   .img-shop img {
     width: 450px;
     height: 400px;
-     /* keep aspect ratio */
   }
-  .img-shop-spp {
-    justify-content: center;
-    align-items: center;
-    top: 120px; /* adjust top for smaller screen */
-    left: 110px;
+  .img-shop-spp{
+    top: 150px;
   }
+
   .big-l {
     font-size: 40px;
   }
@@ -466,17 +468,22 @@ align-items: center;
   align-items: center;
   gap: 2em;
   }
-  .Select-Group-1, .Select-Group-2, .Select-Group-3 {
-    
+  .Select-Group-1, .Select-Group-2, .Select-Group-3 { 
     margin-left: 0;
     font-size: 10px;
     width: 400px;
   }
+
+
   .last-se{
     font-size:20px;
   }
   #R, #p {
     width: 100%;
+  }
+  #R:focus,#p:focus{
+    border-radius: 10px;
+    margin-bottom: 120px;
   }
 
   .Select-Group-3 {
@@ -484,16 +491,34 @@ align-items: center;
     align-items: flex-start;
   }
 
-  /* Product grid */
+  
   .block-sell {
-display: grid;
+   display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 15px;
     max-width: 100%;
+    margin: 0em 2em 0em 2em;
+  }
+  .container-2{
+     margin: 0em 2em 0em 2em;
+  }
+  .avertise{
+    top: 20px;
+  }
+  .star svg{
+    height: 20px;
+    width: 20px;
   }
   .img-item img {
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+  .more{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 160px;
   }
 
   /* Footer */
